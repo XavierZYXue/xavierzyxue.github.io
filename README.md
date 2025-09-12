@@ -1,5 +1,6 @@
 # xavierzyxue.github.io
 
-# My Blogs
-- [blog1](./blog1.md)
-- [iterm2](./iterm2/install.md)
+# Mac config
+- [jdk](./mac-setup/jdk8.md)
+- [iterm2](./mac-setup/iterm2.md)
+- [intellij](./mac-setup/intellij.md)
