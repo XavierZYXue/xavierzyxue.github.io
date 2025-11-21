@@ -127,9 +127,6 @@ kind: Ingress
 metadata:
   name: wonderful-ingress-v1
   annotations:
-    # nginx.ingress.kubernetes.io/rewrite-target: /
-    # nginx.ingress.kubernetes.io/backend-protocol: "HTTP"
-    # ingress.kubernetes.io/ssl-redirect: "false"
 spec:
   ingressClassName: nginx
   rules:
@@ -193,22 +190,13 @@ spec:
 
 # ingress2
 ```yaml
-# 金丝雀版本的 Ingress
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: wonderful-ingress-canary
   annotations:
-    # 启用金丝雀发布
-    # nginx.ingress.kubernetes.io/rewrite-target: /
-    # 金丝雀发布配置 - 10% 流量导向 v2
     nginx.ingress.kubernetes.io/canary: "true"
     nginx.ingress.kubernetes.io/canary-weight: "10"
-    # 可选：基于请求头的金丝雀发布
-    # nginx.ingress.kubernetes.io/canary-by-header: "Canary"
-    # nginx.ingress.kubernetes.io/canary-by-header-value: "true"
-    # 可选：基于 Cookie 的金丝雀发布
-    # nginx.ingress.kubernetes.io/canary-by-cookie: "canary"
 spec:
   ingressClassName: nginx
   rules:
