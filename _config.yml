@@ -1,2 +1,30 @@
+# GitHub Pages Configuration
+# Theme configuration for xavierzyxue.github.io
+
+# Custom settings
+title: xavierzyxue - 技术博客
+description: 专注于云原生、容器化与开发工具的技术博客
+baseurl: ""
+url: "https://xavierzyxue.github.io"
+
+# Build settings
+github_repo: xavierzyxue/xavierzyxue.github.io
+markdown: CommonMarkGhPages
+highlighter: rouge
+
+# Exclude from processing.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README.md
+
+# Include custom pages
 include:
-    README.md
+  - index.html
+  - styles.css
+  - script.js

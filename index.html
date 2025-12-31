@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>xavierzyxue - 技术博客</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="/">xavierzyxue</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">首页</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#k8s" class="nav-link">K8s</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#mac" class="nav-link">Mac配置</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">关于</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        <span class="gradient-text">技术探索者</span>
+                    </h1>
+                    <p class="hero-subtitle">专注于云原生、容器化与开发工具的技术博客</p>
+                    <p class="hero-description">分享Kubernetes实践经验和Mac开发环境配置心得</p>
+                    <div class="hero-buttons">
+                        <a href="#k8s" class="btn btn-primary">开始阅读</a>
+                        <a href="#about" class="btn btn-secondary">了解更多</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="floating-cards">
+                        <div class="card card-1">
+                            <i class="fas fa-dharmachakra"></i>
+                            <span>K8s</span>
+                        </div>
+                        <div class="card card-2">
+                            <i class="fas fa-laptop-code"></i>
+                            <span>Mac Setup</span>
+                        </div>
+                        <div class="card card-3">
+                            <i class="fas fa-cloud"></i>
+                            <span>DevOps</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="k8s" class="section">
+            <div class="container">
+                <h2 class="section-title">Kubernetes 实践</h2>
+                <div class="cards-grid">
+                    <article class="card-content">
+                        <div class="card-header">
+                            <i class="fas fa-ship gradient-icon"></i>
+                            <h3>Canary 部署</h3>
+                        </div>
+                        <p>Kubernetes Canary部署实践与流量分割策略，实现安全的蓝绿部署和金丝雀发布。</p>
+                        <a href="k8s/canary/canary.md" class="read-more">
+                            阅读更多 <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="mac" class="section bg-dark">
+            <div class="container">
+                <h2 class="section-title light">Mac 开发环境配置</h2>
+                <div class="cards-grid">
+                    <article class="card-content">
+                        <div class="card-header">
+                            <i class="fab fa-java gradient-icon"></i>
+                            <h3>JDK 多版本管理</h3>
+                        </div>
+                        <p>使用jenv优雅地管理多个JDK版本，在项目中灵活切换Java环境。</p>
+                        <a href="mac-setup/jdk8.md" class="read-more">
+                            阅读更多 <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </article>
+
+                    <article class="card-content">
+                        <div class="card-header">
+                            <i class="fas fa-terminal gradient-icon"></i>
+                            <h3>iTerm2 配置</h3>
+                        </div>
+                        <p>打造高效的终端工作环境，配置个性化的iTerm2提升开发效率。</p>
+                        <a href="mac-setup/iterm2.md" class="read-more">
+                            阅读更多 <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </article>
+
+                    <article class="card-content">
+                        <div class="card-header">
+                            <i class="fas fa-code gradient-icon"></i>
+                            <h3>IntelliJ IDEA 优化</h3>
+                        </div>
+                        <p>IntelliJ IDEA性能优化与插件推荐，构建顺滑的开发体验。</p>
+                        <a href="mac-setup/intellij.md" class="read-more">
+                            阅读更多 <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title">关于我</h2>
+                <div class="about-content">
+                    <p>热爱技术的工程师，专注于云原生技术和现代开发工具的研究与实践。希望通过分享经验帮助更多人解决技术问题。</p>
+                    <div class="social-links">
+                        <a href="https://github.com/xavierzyxue" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="mailto:xavierzyxue@gmail.com"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 xavierzyxue. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
